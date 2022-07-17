@@ -10,10 +10,43 @@
     <link href="/dist/output.css" rel="stylesheet">
     <script src="https://unpkg.com/alpinejs/dist/cdn.min.js" defer></script>
     <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://unpkg.com/alpinejs/dist/cdn.min.js" defer></script>
+    <script src="pdf.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js" ></script>
+    <script src="script.js"></script>
+    <script src="html2pdf.bundle.min.js"></script>
+
 </head>
-<body>
+
+<body >
     <%- include('partials/navbar'); %>
-    <%- include('partials/pagar_deuda_d'); %>
-    <%- include('partials/pagar_deuda_n'); %>
+    <div class="flex flex row">
+        <div class="basis-1/2" id="html2pdf">
+            <%- include('partials/pdf_certificado'); %>
+        </div>
+        <div class="basis-1/2 mx-auto p-24">
+            <button class="inline-flex content-center items-center px-6 py-2 text-red-100 bg-red-700 rounded-full hover:bg-red-800">
+                <img src="https://extension.fcm.unc.edu.ar/wp-content/uploads/sites/10/2018/02/icono-descarga.png" width="20%">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <div class="text-4xl ">DESCARGAR</div>
+            </button>
+          </div>
+        
+    </div>
+    
+    
+    
 </body>
 </html>

@@ -39,6 +39,10 @@ router.get('/pdeudas', function(req, res, next) {
   res.render('pdeudas', { title: 'Pagar Deudas' });
 });
 
+router.get('/realizarP', function(req, res, next) {
+  res.render('realizarP', { title: 'Realizar Pagos' });
+});
+
 router.post('/main', function(req, res, next) {
   let email = req.body.email;
   let password = req.body.password;
@@ -55,7 +59,7 @@ router.post('/main', function(req, res, next) {
           res.redirect('/main');
       }
       else{
-        req.flash('error','El usuario no exixste...');
+        req.flash('error','El usuario o contraseña no exixste...');
         res.redirect('/login');
       }
     }
@@ -88,9 +92,7 @@ router.get('/cliente-list', function(req, res, next) {
   });
 });
 
-router.get('/realizarP', function(req, res, next) {
-  res.render('realizarP', { title: 'Realizar Pagos' });
-});
+
 
 
 
