@@ -3,7 +3,7 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+/*bhbhj*/
 var flash = require('express-flash');
 var session = require('express-session');
 var mysql = require('mysql');
