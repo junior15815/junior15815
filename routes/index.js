@@ -50,6 +50,9 @@ router.get('/resultados', function(req, res, next) {
 router.get('/membresia_pago', function(req, res, next) {
   res.render('membresia_pago', { title: 'Pagar membresia' });
 });
+router.get('/resultados_c', function(req, res, next) {
+  res.render('resultados_c', { title: 'Pagar membresia' });
+});
 
 router.post('/main', function(req, res, next) {
   let email = req.body.email;
