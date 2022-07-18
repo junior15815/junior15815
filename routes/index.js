@@ -19,8 +19,14 @@ router.get('/perfil', function(req, res, next) {
   res.render('perfil', { title: 'Mi perfil' });
 });
 
-router.get('/rcapacitacion', function(req, res, next) {
-  res.render('rcapacitacion', { title: 'Realizar capacitacion' });
+router.get('/prim', function(req, res, next) {
+  res.render('Recapacitacion', { title: 'Express' });
+});
+router.get('/segun', function(req, res, next) {
+  res.render('Mostrarcapacitaciones', { title: 'Express' });
+});
+router.get('/ulti', function(req, res, next) {
+  res.render('Generarpago', { title: 'Express' });
 });
 
 router.get('/pcertificado', function(req, res, next) {
