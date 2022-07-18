@@ -59,6 +59,7 @@ router.post('/main', function(req, res, next) {
           req.session.idu=rows[0]["id"];
           req.session.email=rows[0]["email"];
           req.session.loggedin = true;
+          console.log("inicio")
           res.redirect('/main');
       }
       else{
@@ -70,7 +71,7 @@ router.post('/main', function(req, res, next) {
 
 });
 
-router.get('/dashboard', function(req, res, next) {
+router.get('/main', function(req, res, next) {
   if (!req.session.loggedin) {
     res.redirect('/');
   } else {
@@ -99,7 +100,7 @@ router.get('/cliente-list', function(req, res, next) {
 
 
 
-router.get('/main', function(req, res, next) {
+/*router.get('/main', function(req, res, next) {
   //if(!req.session.loggedin){
   //  res.redirect('/login');
   //}else{
@@ -121,6 +122,6 @@ router.get('/main', function(req, res, next) {
     });
     
   //}
-});
+});*/
 
 module.exports = router;

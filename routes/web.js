@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var dbConn  = require('../lib/db');
 
+/*
 router.post('/add', function(req, res, next) {
     console.log(req.body);
     let nombres = req.body.nombres;
@@ -37,7 +38,7 @@ router.post('/add', function(req, res, next) {
             }
         })
     }
-});
+}); */
 
 //registrar inscripcion
 // router.post('/add', function(req, res, next) {    
