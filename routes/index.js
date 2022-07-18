@@ -42,6 +42,14 @@ router.get('/pdeudas', function(req, res, next) {
 router.get('/realizarP', function(req, res, next) {
   res.render('realizarP', { title: 'Realizar Pagos' });
 });
+router.get('/resultados', function(req, res, next) {
+  res.render('resultados', { title: 'Realizar Pagos' });
+});
+
+/*M ruta */
+router.get('/membresia_pago', function(req, res, next) {
+  res.render('membresia_pago', { title: 'Pagar membresia' });
+});
 
 router.post('/main', function(req, res, next) {
   let email = req.body.email;
