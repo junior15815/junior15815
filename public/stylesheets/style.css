@@ -582,12 +582,9 @@ video {
   top: 0px;
   bottom: 0px;
 }
-<<<<<<< HEAD
-=======
 .bottom-0 {
   bottom: 0px;
 }
->>>>>>> c211293fa8ddec1b8579369a39ae0c6f79decd4a
 .right-0 {
   right: 0px;
 }
@@ -754,9 +751,6 @@ video {
 }
 .mb-8 {
   margin-bottom: 2rem;
-<<<<<<< HEAD
-}
-=======
 }
 .mt-0 {
   margin-top: 0px;
@@ -767,7 +761,6 @@ video {
 .mr-3 {
   margin-right: 0.75rem;
 }
->>>>>>> c211293fa8ddec1b8579369a39ae0c6f79decd4a
 .mb-24 {
   margin-bottom: 6rem;
 }
@@ -906,15 +899,12 @@ video {
 .w-4 {
   width: 1rem;
 }
-<<<<<<< HEAD
-=======
 .w-10 {
   width: 2.5rem;
 }
 .w-44 {
   width: 11rem;
 }
->>>>>>> c211293fa8ddec1b8579369a39ae0c6f79decd4a
 .w-\[210mm\] {
   width: 210mm;
 }
@@ -1097,13 +1087,10 @@ video {
   border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
-<<<<<<< HEAD
-=======
 .divide-gray-100 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
->>>>>>> c211293fa8ddec1b8579369a39ae0c6f79decd4a
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1236,19 +1223,11 @@ video {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-<<<<<<< HEAD
 }
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
-=======
-}
-.bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
->>>>>>> c211293fa8ddec1b8579369a39ae0c6f79decd4a
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
@@ -1509,12 +1488,9 @@ video {
 .pt-7 {
   padding-top: 1.75rem;
 }
-<<<<<<< HEAD
-=======
 .pt-4 {
   padding-top: 1rem;
 }
->>>>>>> c211293fa8ddec1b8579369a39ae0c6f79decd4a
 .pt-6 {
   padding-top: 1.5rem;
 }
@@ -1592,6 +1568,12 @@ video {
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
+}
+.font-bold {
+  font-weight: 700;
+}
+.font-light {
+  font-weight: 300;
 }
 .font-semibold {
   font-weight: 600;
@@ -2199,14 +2181,11 @@ video {
   .dark\:hover\:bg-gray-700:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(55 65 81 / var(--tw-bg-opacity));
-<<<<<<< HEAD
-=======
   }
 
   .dark\:hover\:bg-gray-600:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(75 85 99 / var(--tw-bg-opacity));
->>>>>>> c211293fa8ddec1b8579369a39ae0c6f79decd4a
   }
 
   .dark\:hover\:text-white:hover {
