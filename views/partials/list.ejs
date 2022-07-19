@@ -1,0 +1,36 @@
+<div class="container mx-auto bg-slate-300">
+    <h1 class="text-center text-lg font-bold mb-5">Lista de certificados</h1>
+    <% if(data.length) { %>
+        <div class="mx-5 shadow-lg sm:rounded-lg bg-white"></div>
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">codigo</th>
+                    <th scope="col">fecha_emision</th>
+                    <th scope="col">asunto</th>
+                    <th scope="col">tipo</th>
+                </tr>
+            </thead>
+            <tbody>
+            <% for(var i = 0; i< data.length; i++) { %>
+                <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 dark:text-white whitespace-nowrap">
+                        <%= (i+1) %>
+                    </th>
+                    <td class="px-6 py-4"><%= data[i].id%></td>
+                    <td class="px-6 py-4"><%= data[i].codigo%></td>
+                    <td class="px-6 py-4"><%= data[i].fecha_emicion%></td>
+                    <td class="px-6 py-4"><%= data[i].asunto%></td>
+                    <td class="px-6 py-4"><%= data[i].tipo%></td>
+                    
+                </tr>
+            <% } %>
+            </tbody>
+        </table>
+        <% } %>
+        <!-- if result is empty -->
+        <% if(!data.length) { %>
+            <p class="text-center">No se encontro ningun certificado</p>
+        <% } %>
+    </div>

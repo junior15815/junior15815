@@ -4,7 +4,7 @@ var dbConn  = require('../lib/db');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('login', { title: 'Express' });
 });
 
 router.get('/inscripcion', function(req, res, next) {
@@ -27,6 +27,9 @@ router.get('/segun', function(req, res, next) {
 });
 router.get('/ulti', function(req, res, next) {
   res.render('Generarpago', { title: 'Express' });
+});
+router.get('/generarcapa', function(req, res, next) {
+  res.render('generarcapa', { title: 'Express' });
 });
 
 router.get('/pcertificado', function(req, res, next) {
@@ -60,6 +63,20 @@ router.get('/resultados_c', function(req, res, next) {
 router.get('/ServSoli', function(req, res, next) {
   res.render('ServSoli', { title: 'Servicio Solicitado' });
 });
+router.get('/VerServ', function(req, res, next) {
+  res.render('VerServ', { title: 'Visualizar Servicio' });
+});
+
+router.get('/pagocerh', function(req, res, next) {
+  res.render('pagocerh', { title: 'Pagar Certificado' });
+});
+
+
+
+router.get('/list', function(req, res, next) {
+  res.render('list', { title: 'Certificado lista' });
+});
+
 
 router.post('/main', function(req, res, next) {
   let email = req.body.email;
@@ -100,13 +117,15 @@ router.get('/logout', function (req, res) {
   res.redirect('/');
 });
 
-router.get('/cliente-list', function(req, res, next) {  
-  dbConn.query('SELECT * FROM CLIENTES',function(err,rows)     {
+router.get('/certificado', function(req, res, next) {  
+  dbConn.query('SELECT * FROM certificado_habilitacion',function(err,rows)     {
+    
       if(err) {
           req.flash('error', err);
-          res.render('clientes/list',{data:''});   
+          res.render('certificado',{data:''});   
       }else {
-          res.render('clientes/list',{data:rows});
+        
+          res.render('certificado',{data:rows});
       }
   });
 });

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Servicio Solicitado</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
@@ -12,86 +12,102 @@
         <div class="flex justify-between container mx-auto">
         <div class="w-full">
         <div class="mt-4 px-4">
-        <h1 class="text-3xl font-semibold py-7 px-5">addbyme</h1>
-        <h1 class="font-thinner flex text-4xl pt-10 px-5">Setup Your ABM Id
+        <h1 class="text-3xl font-semibold py-7 px-5 text-3xl">SOLICITUD DE SERVICIO</h1>
+        <h1 class="font-thinner flex text-4xl pt-10 px-5">Datos para el llenado de Solicitud de Servicio
         </h1>
         
         <form class="mx-5 my-5">
         <label class="relative block p-3 border-2 border-black rounded" htmlFor="name">
           <span class="text-md font-semibold text-zinc-900" htmlFor="name">
-            Name
+            Apellidos y Nombres Completos
           </span>
-          <input class="w-full bg-transparent p-0 text-sm  text-gray-500 focus:outline-none" id="name" type="text" placeholder="Your name" />
+          <input class="w-full bg-transparent p-0 text-sm  text-gray-500 focus:outline-none" id="name" type="text" placeholder="Digite sus nombres" />
         </label>
         <div class="mt-5">
         <label class="input-field inline-flex items-baseline border-2 border-black rounded  p-4">
-        <span class="flex-none text-dusty-blue-darker select-none leading-none">addby.me/
+        <span class="flex-none text-dusty-blue-darker select-none leading-none">Número Telefónico:
         </span>
         <div class="flex-1 leading-none">
-        <input id="handle" type="text" class="w-full pl-1 bg-transparent focus:outline-none" name="handle" placeholder="username" />
+        <input id="handle" type="text" class="w-full pl-1 bg-transparent focus:outline-none" name="handle" placeholder="000-000-000" />
         </div>
         </label>
         </div>
         
-        <div class="shrink-0 mt-5">
-            <img class="h-20 w-20 object-cover rounded-full" src="https://sahilnetic.xyz/sahilnetic.png" alt="Current profile photo" />
-          </div> 
-          <label class="block pt-2">
-            <span class="sr-only t-2">Choose profile photo</span>
-            <input type="file" class="w-full text-sm text-slate-500
-              file:mr-4 file:py-2 file:px-4
-              file:rounded-full file:border-0
-              file:text-sm file:font-semibold
-              file:bg-pink-300 file:text-zinc-900
-              hover:file:bg-rose-300
-            "/>
-          </label>
+        <div style="background-color : #f4f4f0">
+          <div class="flex justify-between container mx-auto">
+          <div class="w-full">
+          <div class="mt-4 px-4">
+          <h1 class="font-thinner flex text-4xl pt-10 px-5 text-3xl">Detalles del servicio solicitado
+          </h1>
         
-        
+
         
         <label class="relative block p-3 border-2 mt-5 border-black rounded" htmlFor="name">
           <span class="text-md font-semibold text-zinc-900" htmlFor="name">
-            Bio
+            ALQUILER DE:
           </span>
         
-          <input class="w-full   p-0 text-sm border-none bg-transparent text-gray-500 focus:outline-none" id="name" type="text" placeholder="Write Your Bio" />
+          <input class="w-full   p-0 text-sm border-none bg-transparent text-gray-500 focus:outline-none" id="name" type="text" placeholder="Describe el ambiente que desea contratar" />
         </label>
         
         
         <label class="relative block p-3 border-2  mt-5 border-black rounded" htmlFor="name">
           <span class="text-md font-semibold  text-zinc-900" htmlFor="name">
-            Upi Id
+            DETALLES DEL ASUNTO:
           </span>
         
-          <input class="w-full read-only:bg-zinc-800  p-0 text-sm bg-transparent text-gray-500 focus:outline-none" id="name" type="text" placeholder="ie : lisa859sh@okaxis" />
-          <button class="font-medium bg-blue-500 px-2 text-white text-sm rounded-md">learn more</button>
+          <input class="w-full read-only:bg-zinc-800  p-0 text-sm bg-transparent text-gray-500 focus:outline-none" id="name" type="text" placeholder="Detalles como: Fecha, Hora, Cantidad de personas" />
+          
         </label>
         
         <label class="relative block p-3 border-2 mt-5 border-black rounded" htmlFor="name">
           <span class="text-md font-semibold  text-zinc-900" htmlFor="name">
-            Paypal Me
+            DECLARACIÓN DE CUIDADOS:
           </span>
         
-          <input class="w-full read-only:bg-zinc-800  p-0 text-sm bg-transparent text-gray-500 focus:outline-none" id="name" type="text" placeholder="ie : paypal.me/yubashika" />
-          <button class="font-medium bg-blue-500 px-2 text-white text-sm rounded-md">learn more</button>
+          <input class="w-full read-only:bg-zinc-800  p-0 text-sm bg-transparent text-gray-500 focus:outline-none" id="name" type="text" placeholder="Declara tus modos y cuidados que le darás al ambiente prestado" />
+          
         </label>
         
-        <h1 class="text-2xl font-semibold mt-5">Category :</h1>
-        <p class="text-black text-sm font-normal flex gap gap-2 pt-2">
-                  <button class="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Business</button>
-                  <button class="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Creative</button>
-                  <button class="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Education</button>
-        </p>
-        
-        <p class="text-black text-sm font-normal flex gap gap-2 pt-2">
-                  <button class="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Tech</button>
-                  <button class="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Entertainment</button>
-                  <button class="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Other</button>
-        </p>
-        
-        <Button class="mt-5 border-2 px-5 py-2 rounded-lg border-black border-b-4 font-black translate-y-2 border-l-4">
-          Submit
-        </Button>
+        <h1 class="text-2xl font-semibold mt-5">AMBIENTE ESPECIFICADO</h1>
+        <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+          <div class="space-x-2 flex text-sm">
+            <label>
+              <input class="sr-only peer" name="option" type="radio" value="EE" checked />
+              <div class="w-50 h-50 rounded-lg  flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                ALQUILER DEL LOCAL DE EVENTOS ESPECIALES (C_Puno)
+              </div>
+            </label>
+            <label>
+              <input class="sr-only peer" name="option" type="radio" value="EA" />
+              <div class="w-50 h-50 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                ALQUILER DE LOCAL EVENTOS ACADÉMICOS (C_Puno)
+              </div>
+            </label>
+            <label>
+              <input class="sr-only peer" name="option" type="radio" value="A2" />
+              <div class="w-50 h-50 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                ALQUILER DE AUDITORIO 2° PISO (C_Puno)
+              </div>
+            </label>
+            <label>
+              <input class="sr-only peer" name="option" type="radio" value="A1" />
+              <div class="w-50 h-50 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                ALQUILER DE AUDITORIO 1° PISO (C_Juliaca)
+              </div>
+            </label>
+            <label>
+              <input class="sr-only peer" name="option" type="radio" value="LC" />
+              <div class="w-50 h-50 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+                ALQUILER DE LABORATORIO COMPUTO 3° PISO (C_Juliaca)
+              </div>
+            </label>
+          </div>
+        </div>
+        <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 bg-red-700 text-white" type="button">
+          ENVIAR
+        </button>
+
         </form>
           </div>
             </div>
