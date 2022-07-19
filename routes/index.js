@@ -87,7 +87,7 @@ router.post('/main', function(req, res, next) {
 
 router.get('/main', function(req, res, next) {
   if (!req.session.loggedin) {
-    res.redirect('/');
+    res.redirect('/main');
   } else {
     res.render('main');    
   }
