@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="images/apple-icon.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css"
+    />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://unpkg.com/alpinejs/dist/cdn.min.js" defer></script>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+    <title>Login | Tailwind Starter Kit by Creative Tim</title>
+</head>
+<body>
+    <%- include('partials/navbar'); %>
+    <div style="background-color : #f4f4f0" class=" sm:mx-32 lg:mx-32 xl:mx-72 ">
+        <div class="flex justify-between container mx-auto">
+            <div class="w-full">
+                <div class="mt-4 px-4">
+                    <h1 class="font-thinner flex text-4xl pt-10 px-5">Generar capacitación</h1>
+                    <form class="mx-5 my-5">
+                        <label class="relative block p-3 border-2 border-black rounded" htmlFor="name">
+                            <span class="text-md font-semibold text-zinc-900" htmlFor="name">Nombre de la capacitación</span>
+                            <input class="w-full bg-transparent p-0 text-sm  text-gray-500 focus:outline-none" id="name" type="text"  />
+                        </label>
+                        <div class="mt-5">
+                            <label class="input-field inline-flex items-baseline border-2 border-black rounded  p-4">
+                                <span class="flex-none text-dusty-blue-darker select-none leading-none">Gmail del ponente :</span>
+                                <div class="flex-1 leading-none">
+                                    <input id="handle" type="text" class="w-full pl-1 bg-transparent focus:outline-none" name="handle" />
+                                </div>
+                            </label>
+                        </div>
+                        <div class="shrink-0 mt-5">
+                            <img class="h-20 w-20 object-cover rounded-full" src="https://sahilnetic.xyz/sahilnetic.png" alt="Current profile photo" />
+                        </div> 
+                        <label class="block pt-2">
+                            <span class="sr-only t-2">Choose profile photo</span>
+                                <input type="file" class="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-pink-300 file:text-zinc-900 hover:file:bg-rose-300"/>
+                        </label>
+                        <label class="relative block p-3 border-2 mt-5 border-black rounded" htmlFor="name">
+                            <span class="text-md font-semibold text-zinc-900" htmlFor="name">Descripción</span>
+                            <input class="w-full   p-0 text-sm border-none bg-transparent text-gray-500 focus:outline-none" id="name" type="text" placeholder="___________________________________________" />
+
+                        </label>
+                        <label class="relative block p-3 border-2  mt-5 border-black rounded" htmlFor="name">
+                            <span class="text-md font-semibold  text-zinc-900" htmlFor="name">Certificado</span>
+                            <input class="w-full read-only:bg-zinc-800  p-0 text-sm bg-transparent text-gray-500 focus:outline-none" id="name" type="text" />
+                            <button class="font-medium bg-blue-500 px-2 text-white text-sm rounded-md">Verificar</button>
+                        </label>
+                        <label class="relative block p-3 border-2 mt-5 border-black rounded" htmlFor="name">
+                            <span class="text-md font-semibold  text-zinc-900" htmlFor="name">Mi Paypal</span>
+                            <input class="w-full read-only:bg-zinc-800  p-0 text-sm bg-transparent text-gray-500 focus:outline-none" id="name" type="text" />
+                            <button class="font-medium bg-blue-500 px-2 text-white text-sm rounded-md">Verificar</button>
+                        </label>
+                        <h1 class="text-2xl font-semibold mt-5">Categoria :</h1>
+                        <p class="text-black text-sm font-normal flex gap gap-2 pt-2">
+                                <button class="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Taller</button>
+                                <button class="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Conferencia</button>
+                                <button class="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">C. Interinstitucional</button>
+                        </p>
+                        <p class="text-black text-sm font-normal flex gap gap-2 pt-2">
+                                <button class="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Formación Laboral</button>
+                                <button class="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Formación Profecioanl</button>
+                                <button class="border-2 border-black rounded-md border-b-4 border-l-4 font-black px-2">Cusos</button>
+                        </p>
+                        <Button class="mt-5 border-2 px-5 py-2 rounded-lg border-black border-b-4 font-black translate-y-2 border-l-4">Validar</Button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
