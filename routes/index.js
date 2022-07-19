@@ -59,6 +59,9 @@ router.get('/membresia_pago', function(req, res, next) {
 router.get('/resultados_c', function(req, res, next) {
   res.render('resultados_c', { title: 'Pagar membresia' });
 });
+router.get('/ServSoli', function(req, res, next) {
+  res.render('ServSoli', { title: 'Servicio Solicitado' });
+});
 
 router.post('/main', function(req, res, next) {
   let email = req.body.email;
