@@ -7,6 +7,12 @@
   <title>Document</title>
   <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
   <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/dist/output.css" rel="stylesheet">
+    <script src="https://unpkg.com/alpinejs/dist/cdn.min.js" defer></script>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
 </head>
 <body>
   <%- include('partials/navbar'); %>
@@ -17,7 +23,7 @@
     <% if(data.length) { %>
         <div class="mx-5 shadow-lg sm:rounded-lg bg-white"></div>
         <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <thead class="text-xs text-red-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">codigo</th>

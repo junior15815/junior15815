@@ -1372,12 +1372,31 @@ video {
   background-color: rgb(99 102 241 / var(--tw-bg-opacity));
 }
 .bg-green-700 {
+<<<<<<< HEAD
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+.bg-gray-700 {
+=======
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
 }
 .bg-gray-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+<<<<<<< HEAD
+=======
+=======
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+>>>>>>> 700522a2c5309ea663f11e5a5be1b85eda216bff
+>>>>>>> 05b7467928622b201bbe2bd873c460771270766c
+}
+.bg-blue-500 {
+>>>>>>> 8522c0bd93b09ee47136da6ad3552b020467f40d
+>>>>>>> 6a8ea387122d8d5dd4f21ede8a5a885f62165991
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+>>>>>>> 49e072c35fa66cf950c2c6491711cfa1f78b491f
 }
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
@@ -1483,9 +1502,18 @@ video {
 .p-2 {
   padding: 0.5rem;
 }
+<<<<<<< HEAD
 .p-12 {
   padding: 3rem;
+=======
+<<<<<<< HEAD
+=======
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+>>>>>>> 49e072c35fa66cf950c2c6491711cfa1f78b491f
 }
+>>>>>>> 6a8ea387122d8d5dd4f21ede8a5a885f62165991
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -1521,10 +1549,13 @@ video {
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
+<<<<<<< HEAD
 }
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+=======
+>>>>>>> 49e072c35fa66cf950c2c6491711cfa1f78b491f
 }
 .py-24 {
   padding-top: 6rem;
@@ -1664,6 +1695,12 @@ video {
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+<<<<<<< HEAD
+=======
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+>>>>>>> 49e072c35fa66cf950c2c6491711cfa1f78b491f
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1692,14 +1729,24 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
+<<<<<<< HEAD
 .text-base {
   font-size: 1rem;
   line-height: 1.5rem;
 }
+=======
+>>>>>>> 49e072c35fa66cf950c2c6491711cfa1f78b491f
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
 }
+<<<<<<< HEAD
+=======
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+>>>>>>> 49e072c35fa66cf950c2c6491711cfa1f78b491f
 .font-bold {
   font-weight: 700;
 }
@@ -1761,9 +1808,9 @@ video {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
-.text-gray-700 {
+.text-red-700 {
   --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+  color: rgb(185 28 28 / var(--tw-text-opacity));
 }
 .text-gray-900 {
   --tw-text-opacity: 1;
@@ -1821,13 +1868,17 @@ video {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
 }
+<<<<<<< HEAD
 .text-pink-600 {
   --tw-text-opacity: 1;
   color: rgb(219 39 119 / var(--tw-text-opacity));
 }
 .text-red-700 {
+=======
+.text-gray-700 {
+>>>>>>> 49e072c35fa66cf950c2c6491711cfa1f78b491f
   --tw-text-opacity: 1;
-  color: rgb(185 28 28 / var(--tw-text-opacity));
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 .text-green-500 {
   --tw-text-opacity: 1;
@@ -1877,6 +1928,13 @@ video {
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
 }
+<<<<<<< HEAD
+=======
+.text-orange-700 {
+  --tw-text-opacity: 1;
+  color: rgb(194 65 12 / var(--tw-text-opacity));
+}
+>>>>>>> 49e072c35fa66cf950c2c6491711cfa1f78b491f
 .text-blue-400 {
   --tw-text-opacity: 1;
   color: rgb(96 165 250 / var(--tw-text-opacity));
@@ -2493,6 +2551,18 @@ video {
   }
 
   .dark\:text-gray-300 {
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  .dark\:text-gray-300 {
+=======
+>>>>>>> 700522a2c5309ea663f11e5a5be1b85eda216bff
+  .dark\:text-gray-200 {
+>>>>>>> 05b7467928622b201bbe2bd873c460771270766c
+>>>>>>> 8522c0bd93b09ee47136da6ad3552b020467f40d
+>>>>>>> 6a8ea387122d8d5dd4f21ede8a5a885f62165991
+>>>>>>> 49e072c35fa66cf950c2c6491711cfa1f78b491f
     --tw-text-opacity: 1;
     color: rgb(209 213 219 / var(--tw-text-opacity));
   }
@@ -2964,11 +3034,6 @@ video {
 
   .md\:font-medium {
     font-weight: 500;
-  }
-
-  .md\:text-yellow-700 {
-    --tw-text-opacity: 1;
-    color: rgb(161 98 7 / var(--tw-text-opacity));
   }
 
   .md\:hover\:bg-transparent:hover {
