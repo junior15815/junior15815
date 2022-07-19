@@ -145,8 +145,8 @@ router.get('/certificado', function(req, res, next) {
     res.locals.loggedin=req.session.loggedin;
 
     var queries = [
-     "SELECT COUNT(idx) as cantidad FROM clientes",
-     "SELECT SUM(saldo) as total FROM clientes"
+     "SELECT COUNT(id) as cantidad FROM certificado_habilitacion",
+     "SELECT SUM(costo) as total FROM certificado_habilitacion"
    ];
    
     //dbConn.query('SELECT SUM(saldo) as total FROM clientes',function(err,rows) {
@@ -154,7 +154,7 @@ router.get('/certificado', function(req, res, next) {
      //console.log(rows[0].total);
      if(err) throw err;
      //console.log(rows[0][0].cantidad);
-     res.render('main',{dataCantidad:rows[0][0].cantidad,dataSaldo:rows[1][0].total});
+     res.render('main',{datacer:rows[0][0].cantidad,datacost:rows[1][0].total});
     });
     
   //}
