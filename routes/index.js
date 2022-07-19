@@ -73,8 +73,10 @@ router.get('/pagocerh', function(req, res, next) {
   res.render('pagocerh', { title: 'Pagar Certificado' });
 });
 
-router.get('/certificado', function(req, res, next) {
-  res.render('certificado', { title: 'Certificado' });
+
+
+router.get('/list', function(req, res, next) {
+  res.render('list', { title: 'Certificado lista' });
 });
 
 
@@ -117,13 +119,15 @@ router.get('/logout', function (req, res) {
   res.redirect('/');
 });
 
-router.get('/cliente-list', function(req, res, next) {  
-  dbConn.query('SELECT * FROM CLIENTES',function(err,rows)     {
+router.get('/certificado', function(req, res, next) {  
+  dbConn.query('SELECT * FROM certificado_habilitacion',function(err,rows)     {
+    
       if(err) {
           req.flash('error', err);
-          res.render('clientes/list',{data:''});   
+          res.render('certificado',{data:''});   
       }else {
-          res.render('clientes/list',{data:rows});
+        
+          res.render('certificado',{data:rows});
       }
   });
 });
