@@ -28,6 +28,9 @@ router.get('/segun', function(req, res, next) {
 router.get('/ulti', function(req, res, next) {
   res.render('Generarpago', { title: 'Express' });
 });
+router.get('/generarcapa', function(req, res, next) {
+  res.render('generarcapa', { title: 'Express' });
+});
 
 router.get('/pcertificado', function(req, res, next) {
   res.render('pcertificado', { title: 'Pagar Certificado' });
@@ -62,6 +65,9 @@ router.get('/resultados_c', function(req, res, next) {
 router.get('/ServSoli', function(req, res, next) {
   res.render('ServSoli', { title: 'Servicio Solicitado' });
 });
+router.get('/VerServ', function(req, res, next) {
+  res.render('VerServ', { title: 'Visualizar Servicio' });
+});
 
 router.get('/pagocerh', function(req, res, next) {
   res.render('pagocerh', { title: 'Pagar Certificado' });
@@ -72,6 +78,7 @@ router.get('/pagocerh', function(req, res, next) {
 router.get('/list', function(req, res, next) {
   res.render('list', { title: 'Certificado lista' });
 });
+
 
 router.post('/main', function(req, res, next) {
   let email = req.body.email;
