@@ -28,6 +28,9 @@ router.get('/segun', function(req, res, next) {
 router.get('/ulti', function(req, res, next) {
   res.render('Generarpago', { title: 'Express' });
 });
+router.get('/generarcapa', function(req, res, next) {
+  res.render('generarcapa', { title: 'Express' });
+});
 
 router.get('/pcertificado', function(req, res, next) {
   res.render('pcertificado', { title: 'Pagar Certificado' });
