@@ -1324,10 +1324,30 @@ video {
   background-color: rgb(99 102 241 / var(--tw-bg-opacity));
 }
 .bg-green-700 {
+<<<<<<< HEAD
   --tw-bg-opacity: 1;
   background-color: rgb(21 128 61 / var(--tw-bg-opacity));
 }
 .bg-gray-700 {
+=======
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
+}
+<<<<<<< HEAD
+.bg-slate-300 {
+=======
+.bg-gray-700 {
+  --tw-bg-opacity: 1;
+<<<<<<< HEAD
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+=======
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+>>>>>>> 700522a2c5309ea663f11e5a5be1b85eda216bff
+>>>>>>> 05b7467928622b201bbe2bd873c460771270766c
+}
+.bg-blue-500 {
+>>>>>>> 8522c0bd93b09ee47136da6ad3552b020467f40d
+>>>>>>> 6a8ea387122d8d5dd4f21ede8a5a885f62165991
   --tw-bg-opacity: 1;
   background-color: rgb(55 65 81 / var(--tw-bg-opacity));
 }
@@ -1435,6 +1455,13 @@ video {
 .p-2 {
   padding: 0.5rem;
 }
+<<<<<<< HEAD
+=======
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+>>>>>>> 6a8ea387122d8d5dd4f21ede8a5a885f62165991
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -2364,7 +2391,20 @@ video {
     color: rgb(243 244 246 / var(--tw-text-opacity));
   }
 
+<<<<<<< HEAD
   .dark\:text-gray-300 {
+=======
+<<<<<<< HEAD
+  .dark\:text-gray-300 {
+=======
+<<<<<<< HEAD
+  .dark\:text-gray-300 {
+=======
+>>>>>>> 700522a2c5309ea663f11e5a5be1b85eda216bff
+  .dark\:text-gray-200 {
+>>>>>>> 05b7467928622b201bbe2bd873c460771270766c
+>>>>>>> 8522c0bd93b09ee47136da6ad3552b020467f40d
+>>>>>>> 6a8ea387122d8d5dd4f21ede8a5a885f62165991
     --tw-text-opacity: 1;
     color: rgb(209 213 219 / var(--tw-text-opacity));
   }

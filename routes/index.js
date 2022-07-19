@@ -36,9 +36,7 @@ router.get('/pcertificado', function(req, res, next) {
   res.render('pcertificado', { title: 'Pagar Certificado' });
 });
 
-router.get('/deupendientes', function(req, res, next) {
-  res.render('deupendientes', { title: 'Deudas pendientes' });
-});
+
 
 router.get('/gesproseso', function(req, res, next) {
   res.render('gesproseso', { title: 'Gestionar Proseso' });
@@ -131,6 +129,18 @@ router.get('/certificado', function(req, res, next) {
       }
   });
 });
+
+router.get('/deupendientes', function(req, res, next) {  
+  dbConn.query('SELECT * FROM membresia_deuda',function(err,rows)     {
+      if(err) {
+          req.flash('error', err);
+          res.render('deupendientes',{data:''});   
+      }else {
+          res.render('deupendientes',{data:rows});
+      }
+  });
+});
+
 
 
 
