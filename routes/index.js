@@ -4,7 +4,7 @@ var dbConn  = require('../lib/db');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.render('login', { title: 'Express' });
 });
 
 router.get('/inscripcion', function(req, res, next) {
@@ -63,6 +63,16 @@ router.get('/ServSoli', function(req, res, next) {
   res.render('ServSoli', { title: 'Servicio Solicitado' });
 });
 
+<<<<<<< HEAD
+=======
+router.get('/pagocerh', function(req, res, next) {
+  res.render('pagocerh', { title: 'Pagar Certificado' });
+});
+
+router.get('/certificado', function(req, res, next) {
+  res.render('certificado', { title: 'Certificado' });
+});
+>>>>>>> 03552b7403c172173b5b0d08e787a30185480c7c
 
 router.post('/main', function(req, res, next) {
   let email = req.body.email;
